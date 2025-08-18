@@ -1,0 +1,7 @@
+/******Chapter 1********/
+    /******Unit 1********/
+        In general introduction of the course and the lecturers.
+
+    /******Unit 3********/
+        0) Ref: https://huggingface.co/learn/llm-course/chapter1/3?fw=pt#transformers-what-can-they-do
+        1) pipeline() function
