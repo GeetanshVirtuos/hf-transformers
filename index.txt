@@ -5,3 +5,49 @@
     /******Unit 3********/
         0) Ref: https://huggingface.co/learn/llm-course/chapter1/3?fw=pt#transformers-what-can-they-do
         1) pipeline() function
+
+    /******Unit 4********/
+        About Transformer models and how they work. 
+
+        1) Broadly, Transformer models can be grouped into three categories (i.e are of 3 types):
+            (i) GPT-like (also called auto-regressive Transformer models)
+            (ii)BERT-like (also called auto-encoding Transformer models)
+            (iii)T5-like (also called sequence-to-sequence Transformer models)
+        2) Transformers are language models
+        All the Transformer models mentioned above (GPT, BERT, T5, etc.) have been trained as language models. This means they have been trained on large amounts of raw text in a self-supervised fashion.
+
+        Self-supervised learning is a type of training in which the objective is automatically computed from the inputs of the model. That means that humans are not needed to label the data!
+
+        This type of model develops a statistical understanding of the language it has been trained on, but it’s less useful for specific practical tasks. Because of this, the general pretrained model then goes through a process called transfer learning or fine-tuning. During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
+        3)How Transformer models work: (start reading from here: https://huggingface.co/learn/llm-course/chapter1/4?fw=pt#general-transformer-architecture)
+
+    /******Unit 5********/
+        How 🤗 Transformers solve tasks
+        1) The Transformer was initially designed for machine translation, and since then, it has become the default architecture for solving all AI tasks. Some tasks lend themselves to the Transformer’s encoder structure, while others are better suited for the decoder. Still, other tasks make use of both the Transformer’s encoder-decoder structure.
+        2)How language models work
+            Language models work by being trained to predict the probability of a word given the context of surrounding words. This gives them a foundational understanding of language that can generalize to other tasks.
+
+            There are two main approaches for training a transformer model:
+                i)Masked language modeling (MLM): Used by encoder models like BERT, this approach randomly masks some tokens in the input and trains the model to predict the original tokens based on the surrounding context. This allows the model to learn bidirectional context (looking at words both before and after the masked word).
+                ii)Causal language modeling (CLM): Used by decoder models like GPT, this approach predicts the next token based on all previous tokens in the sequence. The model can only use context from the left (previous tokens) to predict the next token.
+                    - CLM is one of the ways to train a model to perform NLG (Natural Language Generation). 
+            Types of language models
+                In the Transformers library, language models generally fall into 3 architectural categories:
+                    i)Encoder-only models (like BERT): These models use a bidirectional approach to understand context from both directions. They’re best suited for tasks that require deep understanding of text, such as classification, named entity recognition, and question answering.
+                    ii)Decoder-only models (like GPT, Llama): These models process text from left to right and are particularly good at text generation tasks. They can complete sentences, write essays, or even generate code based on a prompt.
+                    iii)Encoder-decoder models (like T5, BART): These models combine both approaches, using an encoder to understand the input and a decoder to generate output. They excel at sequence-to-sequence tasks like translation, summarization, and question answering.
+
+            🔴Tip: Understanding which part of the Transformer architecture (encoder, decoder, or both) is best suited for a particular NLP task is key to choosing the right model. Generally, tasks requiring bidirectional context use encoders, tasks generating text use decoders, and tasks converting one sequence to another use encoder-decoders.
+        3) How to fine tune a pre-trained model from one of the 3 categories above (see point 2) above) for tasks like: 
+            Text generation
+            Text classification
+            Token classification
+            Question answering
+            Summarization
+            Translation etc..
+            start reading from here: https://huggingface.co/learn/llm-course/chapter1/5?fw=pt#text-generation
+
+    /******Unit 6********/
+    Deep dice into the 3 types of transformer model architectures (Encoder only, Decoder only and Encoder - Decoder architectures)
+
+        -This section also has nice videos dry running a text input into the 3 types of transformer model architectures and observing how the output is produced.
