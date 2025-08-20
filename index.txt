@@ -51,3 +51,57 @@
     Deep dice into the 3 types of transformer model architectures (Encoder only, Decoder only and Encoder - Decoder architectures)
 
         -This section also has nice videos dry running a text input into the 3 types of transformer model architectures and observing how the output is produced.
+
+    /******Unit 10********/
+    Summary of chapter1
+
+/******Chapter 2********/
+    This chapter will begin with an end-to-end example where we use a model and a tokenizer together to replicate the pipeline() function introduced in Chapter 1. 
+
+    /******Unit 1 and Unit 2********/
+        1) Two main APIs:   
+            (i) Model API: 
+            (ii) Tokenizer API: it is other main component of the pipeline() function. Tokenizers take care of the first and last processing steps, handling the conversion from text to numerical inputs for the neural network, and the conversion back to text when it is needed. 
+
+        2) Unit 2 has a thorough demo for recreating the the pipeline() function introduced in Chapter 1 by ourselves. So, we see how we can load a tokenizer, a model or a model with a specific head (for our specific task at hand like SequenceClassification, QuestionAnswering etc.) from the Model Hub of huggingface.
+
+        3) Some technical terms:
+            (i) logits: the raw, unnormalized scores outputted by the last layer of the model. To be converted to probabilities, they need to go through a SoftMax layer (all 🤗 Transformers models output the logits, as the loss function for training will generally fuse the last activation function, such as SoftMax, with the actual loss function, such as cross entropy)
+
+    /******Unit 3********/
+        1) Saving and loading your model to the disk and uploading it to huggingface.
+        2) Encoding text: Padding inputs, Truncating inputs etc..
+
+    /******Unit 4********/
+        1) Details on Tokenizers: (i) Different algorithms/ ways to tokenize a sentence (eg: Word-based, Character-based, Subword tokenization, Byte-level BPE, WordPiece etc..)
+        2) Loading and Saving tokenizers.
+    
+    /******Unit 5********/
+    Batching: pass multiple sentences to the model at the same time.
+    
+    /******Unit 6 and Unit 7********/
+    Putting it all together: kind of a summary of all the Units from Unit 1 - Unit 5
+
+    /******Unit 8********/
+    [Skipped this unit for now]
+    About deploying frameworks for optimizing LLM deployments in production
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
