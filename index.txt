@@ -86,7 +86,18 @@
     [Skipped this unit for now]
     About deploying frameworks for optimizing LLM deployments in production
     
+/******Chapter 2********/
+    Fine-tuning a pretrained model
 
+    /******Unit 2********/
+        Learning to preprocessing the data to fine-tune our model.
+        1) Huggingface Datasets Library: used to handle the dataset that will be used to fine-tune the model.
+        2) Some important terms in this unit:
+            (i) Dynamic Padding
+            (ii) Collate function
+
+    /******Unit 3********/
+        Fine-tuning a model with the Trainer API
 
 
 
