@@ -86,7 +86,7 @@
     [Skipped this unit for now]
     About deploying frameworks for optimizing LLM deployments in production
     
-/******Chapter 2********/
+/******Chapter 3********/
     Fine-tuning a pretrained model
 
     /******Unit 2********/
@@ -98,6 +98,16 @@
 
     /******Unit 3********/
         Fine-tuning a model with the Trainer API
+
+    /******Unit 4********/
+        Doing the same thing as in Unit 3 but from scratch (Pytorch) without the Trainer API.
+
+    /******Unit 5********/
+        Adding learning curves to visualize your model's performance while training
+
+        1) Important learning curves:
+            Loss curves
+            Accuracy curves 
 
 
 
